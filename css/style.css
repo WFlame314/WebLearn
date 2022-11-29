@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: Arial;
+    background-color: #d8d6d6;
+}
+/* 顶部 */
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.header h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* 导航条 */
+.topnav{
+    width: 100%;
+    overflow: scroll;
+    background-color: #333333;
+    position:-webkit-sticky;
+	position:sticky;
+	top: 0;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+.topnav a.lasttopnav{
+    float: right;
+}
+
+/* 主体 */
+
+/* banner */
+
+.bannerview{
+    width: 400px;
+    height: 200px;
+    margin:  auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.scrollview{
+    width: 400px;
+    max-height: 220px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    -ms-overflow-style: none;
+}
+
+.scrollview::-webkit-scrollbar{
+    background-color: #ffffff00;
+}
+
+.bannerimagecontainer{
+    width: 1200px;
+    max-height: 300px;
+}
+
+.bannerimage{
+    padding: 0px 20px;
+    float: left;
+    width: 33.33%;
+    height: 200px;
+}
+
+.pagedotview{
+    width: 100%;
+    height: 20px;
+    padding: 0px 30px;
+    position: relative;
+    bottom: 40px;
+    overflow: auto;
+}
+
+.pagedot{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(129, 128, 128, 0.867);
+    display: block;
+    float: left;
+    border-radius: 50%;
+}
+.selectpagedot{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.867);
+    display: block;
+    float: left;
+    border-radius: 50%;
+}
+
+/* 左侧 */
+
+.leftcolumn{
+    float: left;
+    width: 75%;
+    padding-right: 20px;
+}
+
+.leftcolumn .card{
+    background-color: #eeeeee;
+    margin: 20px 0px 20px 0px; 
+    padding: 10px;
+}
+
+.image {
+    width: 100%;
+    max-width: 300px;
+    background-color: gray;
+}
+
+.rightcolumn{
+    float: left;
+    width: 25%;
+    
+}
+.rightcolumn .card{
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 20px 0px 20px 0px; 
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 底部 */
+.footer{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #999999;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a{
+        width: 100%;
+    }
+}
